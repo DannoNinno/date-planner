@@ -21,7 +21,7 @@ const LoginComponent: React.FC= () => {
           type="password"
           placeholder="Password"
         />
-        <button className="mt-2 bg-primaryBlue-600 text-white p-2 rounded-md hover:bg-primaryBlue-700 w-50 self-center font-sora-light">
+        <button className="mt-2 bg-primaryBlue-600 text-white p-2 rounded-md hover:bg-primaryBlue-700 w-50 self-center font-sora-light border-1 border-primaryBlue-200">
           Iniciar Sesion
         </button>
       </div>
