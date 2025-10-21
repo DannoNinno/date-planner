@@ -1,5 +1,6 @@
 export interface UserInterface {
-    id: number;
+    id?: number;
     name: string;
+    password: string;
     location: number;
 }

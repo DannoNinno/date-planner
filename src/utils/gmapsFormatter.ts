@@ -1,7 +1,8 @@
 import { LocationCoordinates } from "./distancia";
 
-export function extractCoordinatesFromGoogleMapsURL(url: string): LocationCoordinates | null {
+export function extractCoordinatesFromGoogleMapsURL(url: string | null): LocationCoordinates | null {
     let coordinates: LocationCoordinates | null = null;
+    if (!url) return null;
     // Patrón 1: @lat,long
     const atPattern = url.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
     if (atPattern) {
@@ -29,6 +30,5 @@ export function extractCoordinatesFromGoogleMapsURL(url: string): LocationCoordi
         }
     }
     // Si no se encuentra ningún patrón
-    console.log('Coordinates extracted:', coordinates);
     return coordinates;
 }

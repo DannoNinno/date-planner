@@ -1,13 +1,17 @@
 'use client';
 
+import LoginComponent from "@/components/login";
+
 const Home: React.FC = () => {
   return (
-    <div className="h-auto md:min-h-screen md:bg-no-repeat md:bg-cover md:bg-top  w-full max-sm:bg-inst-light md:bg-fondo-ensayo flex flex-col md:flex-row-reverse md:pr-20 items-stretch">
-      <div className="w-full sm:w-3/5 md:w-7/12 lg:w-2/5 xl:w-4/12 2xl:w-3/12 bg-inst h-fit rounded-xl self-center border-t-2 border-green-950 border-b-2 sm:border-none sm:p-4">
-        <div className="p-2 bg-slate-100 flex items-stretch flex-col">
-          <h1 className="text-3xl text-center font-roboto-condensed font-bold text-black p-2">
+    <div className="border-4 border-primaryBlue-900">
+      <div className="w-50 h-screen flex justify-center items-center self-center mx-auto">
+        <div className="p-2 bg-primaryBlue-300 border-3 border-primaryBlue-700 flex items-stretch flex-col rounded-xl">
+          <img src="/images/Logo.png" alt="Logo" className="self-center w-32 h-32 m-3" />
+          <h1 className="text-3xl text-center font-sora-extra-bold font-bold text-primaryBlue-900 p-2">
             Date Planner
           </h1>
+          <LoginComponent />
         </div>
       </div>
     </div>

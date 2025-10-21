@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="index-section horizon bg-gradient-greenligth bg-no-repeat bg-cover bg-top w-full bg-fondo-ensayo]">
+      <body className="index-section horizon bg-gradient-greenligth bg-no-repeat bg-cover bg-top w-full bg-fondo-ensayo">
         <Suspense fallback={<div>Loading...</div>}>
           <ClientLayout>{children}</ClientLayout>
         </Suspense>
