@@ -7,7 +7,6 @@ export const metadata: Metadata = {
   title: 'Date Planner',
   description: 'Aplicacion para organizar citas.',
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

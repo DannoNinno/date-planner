@@ -1,6 +1,7 @@
 'use client';
 import RegisterComponent from "@/components/register";
 const Home: React.FC = () => {
+    
     return (
         <div className="border-4 border-primaryBlue-900">
         <div className="w-50 h-screen flex justify-center items-center self-center mx-auto">
